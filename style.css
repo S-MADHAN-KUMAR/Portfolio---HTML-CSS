@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #ffff;
+    scrollbar-width:0;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.container{
+  overflow: hidden;
+  padding: 50px 0px;
+}
+.container-title{
+    padding-bottom: 50px;
+}
+/* Home page */
+
+.home-col-2{
+    width: 370px;
+    height: 420px;
+    margin-left: 100px;
+}
+.home-col-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-col-1 h6{
+    margin-top: 50px;
+    color: rgb(250, 183, 0);
+    margin-bottom: 20px;
+}
+.home-col-1 h1{
+    font-weight: bolder;
+    font-size: 60px;
+}
+.home-col-1 h1 span{
+    color: rgb(250, 183, 0);
+}
+.home-col-1 h5{
+    margin-top: 25px;
+    font-size: 26px;
+    font-weight: normal;
+}
+.h-btn-1{
+    margin-top: 40px;
+    border: none;
+    border-radius: 50px;
+    padding: 5px 20px;
+    font-weight: bold;
+    background: rgb(250, 183, 0);
+    margin-right: 20px;
+}
+.h-btn-2{
+    margin-top: 40px;
+    border-radius: 50px;
+    padding: 3px 18px;
+    font-weight: bold;
+    background: transparent;
+    color: #ffff;
+    border: 2px solid white;
+}
+
+/* About */
+.table{
+    width:500px;
+}
+.table th{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.table td{
+    color: #a0a0a0;
+    font-size: 17px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    width: 100%;
+}
+.about-col-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.about-col-1{
+    width: 380px;
+    margin-bottom: 30px;
+}
+.about-col-2{
+    background: #000000;
+    height: 434px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.no-bg td, .no-bg th{
+    background: transparent !important;
+}
+
+
+/* skills */
+
+.skil-col label{
+    width: fit-content;
+    background: rgb(26, 25, 25);
+    padding: 35px;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+.skil-col h2{
+    font-style: italic;
+    font-size: 19px;
+    margin-left: 20px;
+}
+.skil-col label img {
+    width: 65px;
+    height: 65px;
+}
+.skil-col{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 100px;
+}
+progress {
+    width: 100%;
+    height: 7px;
+    appearance: none;
+    border: none;
+    border-radius: none;
+  }
+progress::-webkit-progress-bar{
+    background-color: #2e2d2d;
+  }
+progress::-webkit-progress-value{
+    background: rgb(250, 183, 0);
+}
+
+/* Projects */
+
+.project-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgb(24, 23, 23);
+}
+.project-col{
+    margin-bottom: 50px;
+}
+.project-img{
+   height: 200px;
+   width: 100%;
+   overflow: hidden;
+}
+.project-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ;
+}
+.project-del{
+    background: rgb(15, 15, 15);
+    padding: 15px;
+}
+.project-del small{
+    font-size: 12px;
+    color: #8d8888;
+}
+.project-del a{
+    text-decoration:none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(29, 170, 180);
+}
+.project-del h6{
+    font-weight: normal;
+}
+.project-del h6 span{
+    color: rgb(128, 123, 123);
+}
+.project-del small{
+    font-size: 12px;
+    color: #8d8888;
+}
+.project-img img:hover{
+    scale: 1.4;
+}
+
+/* contact */
+
+.contact-col-1{
+    height: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+iframe{
+    transition:  all 1.5s;
+}
+iframe:hover{
+    scale: 1.5;
+}
+.contact-col-2{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+form{
+    height: 100%;
+    padding:20px ;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input{
+    background: transparent;
+    border: 1px solid gray;
+    width: 100%;
+    padding:7px;
+    color: #fff;
+}
+.input-group input:focus{
+    outline: none;
+    background: transparent;
+}
+form label{
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+textarea{
+    background: transparent;
+    border: 1px solid #808080;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    border-radius: 2px;
+    color: #fff;
+    padding: 10px;
+}
+textarea:focus{
+    outline: none;
+}
+.sub-btn{
+    border: none;
+    padding: 5px 50px;
+    border-radius: 5px;
+    font-weight: 700;
+    background: rgb(250, 183, 0);
+    width: fit-content;
+    margin-top: 30px;
+}
+.error{
+    display: inline-block;
+    color: rgb(240, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
+
+.form-group.success input{
+    border:1px solid green;
+}
+.form-group.error input{
+    border:1px solid rgb(146, 15, 15);
+}
+.form-group.success textarea{
+    border:1px solid green;
+}
+.form-group.error textarea{
+    border:1px solid rgb(146, 15, 15);
+}
+
+/* footer */
+
+.footer-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.footer-sections{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-sections a{
+    text-decoration: none;
+    color: #948e8e;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-inner h1 {
+    color:rgb(250, 183, 0) ;
+}
+.footer-inner h1 span{
+    color: #ffff;
+}
+
+
+/* Medaia Queries */
+
+@media only screen and (max-width:1200px){
+    body{
+        overflow-x: hidden;
+    }
+    .home-col-2{
+        display: none;
+      }
+      .footer-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+      .about-col-1,.about-col-2 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .skil-col{
+        padding: 10px 40px;
+      }
+      .skil-col label img{
+        width: 45px;
+        height: 45px;
+      }
+      .skil-col label{
+        padding: 25px;
+      }
+      form{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width:625px){
+    .table{
+        width: fit-content;
+        padding: 10px;
+    }
+    .table td{
+        font-size: 15px;
+    }
+    .table th{
+        font-size: 18px;
+    }
+    form{
+        width: 100%;
+    }
+  }
+@media only screen and (max-width:425px){
+    .container{
+        padding: 30px 20px ;
+    }
+    .container-title{
+        padding-bottom: 30px;
+    }
+  }
