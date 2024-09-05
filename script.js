@@ -59,7 +59,7 @@ function setSuccess(element) {
     const parent = element.parentElement;
     const errorDisplay = parent.querySelector('.error');
 
-    errorDisplay.innerText = '';
+    errorDisplay.innerText = 'Successs !';
     parent.classList.add('success');
     parent.classList.remove('error');
 }
