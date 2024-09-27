@@ -274,7 +274,13 @@ textarea:focus{
     font-weight: 500;
     display: block;
 }
-
+.success{
+    display: inline-block;
+    color:green;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+}
 .form-group.success input{
     border:1px solid green;
 }
