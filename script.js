@@ -48,7 +48,7 @@ function ValidateInputs() {
 
 function setError(element, message) {
     const parent = element.parentElement;
-    const errorDisplay = parent.querySelector('.error');
+    const errorDisplay = parent.querySelector('.error-text');
 
     errorDisplay.innerText = message;
     parent.classList.add('error');
@@ -57,7 +57,7 @@ function setError(element, message) {
 
 function setSuccess(element) {
     const parent = element.parentElement;
-    const errorDisplay = parent.querySelector('.error');
+    const errorDisplay = parent.querySelector('.error-text');
 
     errorDisplay.innerText = 'Successs !';
     parent.classList.add('success');
